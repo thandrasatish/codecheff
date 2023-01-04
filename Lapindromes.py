@@ -1,0 +1,27 @@
+t=int(input())
+while(t!=0):
+    a=input()
+    n=len(a)
+    if(n%2==0):
+        x=a[:n//2]
+        y=a[(n//2):n]
+        x=list(x)
+        y=list(y)
+        x.sort()
+        y.sort()
+        if(x==y):
+            print("YES")
+        else:
+            print("NO")
+    else:
+        x=a[:n//2]
+        y=a[(n//2)+1:n]
+        x=list(x)
+        y=list(y)
+        x.sort()
+        y.sort()
+        if(x==y):
+            print("YES")
+        else:
+            print("NO")
+    t=t-1
